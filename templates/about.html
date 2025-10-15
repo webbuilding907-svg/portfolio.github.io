@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Atlas Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Aflax</h2>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about" class="active">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>About Me</h1>
+        <div class="about-section">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Photo">
+            <div class="about-text">
+                <h2>Hello! I'm <span>Aflax</span></h2>
+                <p>
+                    I'm a professional web designer and developer with over 10 years of experience in the field.
+                    I specialize in creating modern, responsive, and user-friendly websites.
+                </p>
+                <p>
+                    I love combining creativity and technology to deliver unique web experiences. Over the years,
+                    I’ve worked with various clients around the world to design and develop beautiful digital solutions.
+                </p>
+                <p>
+                    Skills: HTML, CSS, JavaScript, Python (Flask), React, and UI/UX design.
+                </p>
+                <button>Download CV</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
